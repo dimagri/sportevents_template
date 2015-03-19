@@ -1,0 +1,76 @@
+<!DOCTYPE html >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Index</title>
+<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
+<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="wrap" > <!-- WRAPPER -->
+	
+		<header class="header">   <!-- HEADER -->
+			<div class="right-position" >
+				<div class="profile">
+					<span class="name">Дима<span class="arrow"></span></span>
+					<ul class="dropdown">
+						<li><a href="#">Профиль</a></li>
+						<li><a href="#">Входящие сообщения</a></li>
+						<li><a href="#">Отправленные сообщения</a></li>
+						<li><a href="#">Выйти</a></li>
+					</ul>
+				</div>
+				<ul class="log-in">
+					<li id="enter" >Вход</li>
+					<li id="register">Регистрация</li>
+				</ul>
+			</div>
+			<h1 class="logo">SportEvents</h1>
+		</header> <!-- HEADER -->
+
+		
+		<aside class="sidebar">  <!-- SIDEBAR -->
+			<div class="sidebar-profile" >
+				<img class="user-photo" src="images/user.jpg" alt="" >
+			</div>
+		</aside>  				<!-- SIDEBAR -->
+		
+		
+		<main class="content">  		<!-- MAIN CONTENT -->
+			<img alt="" src="images/map.jpg" >
+		</main>							<!-- MAIN CONTENT -->
+		
+		
+	</div> <!-- WRAPPER -->
+	
+	
+	<div class="enter-popup"> 			<!-- POPUP`S -->
+		<span class="close">x</span>
+		<h3>Вход</h3>
+		<form >
+			<label>Email</label><input type="text">
+			<label>Пароль</label><input type="text">
+			<input class="submit-btn" type="submit" value="Войти">
+		</form>
+		<ul class="social-in">
+			<li class="vk" ><a href="#" title="Войти через Вконтакте" ></a></li>
+			<li class="tw"><a href="#" title="Войти через Twitter" ></a></li>
+		</ul>
+	</div>
+	<div class="register-popup">
+		<span class="close">x</span>
+		<h3>Регистрация</h3>
+		<form>
+			<label>Имя</label><input type="text">
+			<label>Email</label><input type="text">
+			<label>Пароль</label><input type="password">
+			<input class="submit-btn" type="submit" value="Зарегистрироваться">
+		</form>
+	</div>
+	<div class="mask"></div> 		<!-- POPUP`S -->
+</body>
+</html>

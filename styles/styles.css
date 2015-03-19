@@ -1,0 +1,318 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:12px Lato; background:#fff; color:#202020; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+	padding:0;
+	margin:0;
+	outline:none;
+	list-style:none;
+}
+select, input, textarea        { font-size:12px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:12px Lato; color:#000; text-decoration:none; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+.float-r           	           { float:right !important; }
+.float-l                       { float:left !important; }
+.no-float                      { float:none !important; }
+.no-border                     { border:0 !important; }
+.no-bg                         { background:none !important; }
+.no-margin                     { margin:0 !important; }
+.no-padding                    { padding:0 !important; }
+.no-display                    { display:none !important; }
+.display                       { display:block !important; }
+.inline                        { display:inline !important; }
+.overflow                      { overflow:hidden !important; }
+.align-r                       { text-align:right !important; }
+.align-l                       { text-align:left !important; }
+.align-c                       { text-align:center !important; }
+.clear                         { clear:both; }
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------WRAPPER--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+
+body {
+	background:#6495ED;
+}
+
+.header {
+	background:white;
+	border-radius:9px;
+	overflow:hidden;
+	margin: 15px 0 0;
+}
+
+.wrap {
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------HEADER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.log-in, .dropdown, .enter-popup, .register-popup {
+	display:none;
+}
+
+.right-position {
+	float:right;
+}
+
+.logo {
+	overflow:hidden;
+}
+
+.name {
+	cursor:pointer;
+	font-size:20px;
+	padding:17px;
+	display:block;
+}
+
+.profile.active .name, .name:hover {
+	color:#1ABC9C;
+}
+
+.arrow {
+	border-left: 6px dashed transparent;
+    border-right: 6px dashed transparent;
+    border-top: 6px solid #404040;
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.profile.active .arrow, .name:hover .arrow{
+	border-top-color:#1ABC9C;
+}
+
+.dropdown {
+    background: none repeat scroll 0 0 white;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    padding: 10px 20px 10px 10px;
+    position: absolute;
+    right: 11px;
+    top: 53px;
+}
+
+.dropdown::before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent rgba(0, 0, 0, 0.15);
+    border-image: none;
+    border-style: solid;
+    border-width: 8px;
+    content: "";
+    display: inline-block;
+    left: 197px;
+    position: absolute;
+    top: -16px;
+}
+
+.dropdown::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: transparent transparent #fff;
+    border-image: none;
+    border-style: solid;
+    border-width: 7px;
+    content: "";
+    display: inline-block;
+    left: 198px;
+    position: absolute;
+    top: -14px;
+}
+
+
+
+.profile.active .dropdown{
+	display:block;
+}
+
+.dropdown li {
+	/* padding:2px; */
+	border-radius: 4px;
+}
+
+.dropdown li a {
+	padding:4px;
+	display:block;
+	font-size:15px;
+}
+
+.dropdown li:hover{
+	background:#1ABC9C;
+	
+}
+
+.dropdown li:hover a {
+	color:white;
+}
+
+.log-in {
+	overflow:hidden;
+}
+
+.log-in li{
+	cursor:pointer;
+	font-size:20px;
+	padding:17px;
+	float:left;
+}
+
+.log-in li:hover{
+	color:white;
+	background:#19BB9B;
+}
+
+.social-in {
+	overflow:hidden;
+}
+
+.social-in .vk,.social-in .tw {
+	margin:17px 10px 0 0;
+	float:left;
+	background:url("../images/social.png") white;
+	width:30px;
+	height:30px;
+}
+
+.social-in .vk a,.social-in .tw a{
+	width:30px;
+	height:30px;
+	display:block;
+}
+
+.social-in .vk {
+	background-position:30px 0;
+}
+
+.enter-popup, .register-popup{
+	color:#33495D;
+	padding:22px;
+	background:white;
+	border-radius:9px;
+	position:fixed;
+	left:40%;
+	top:20%;
+	font:bold 14.5px Lato;
+	z-index:2;
+	opacity:0;
+}
+
+.enter-popup h3, .register-popup h3{
+	font:bold 24.5px Lato;	
+	margin:0 0 30px;
+}
+
+.mask {
+	display:none;
+	background:rgba(0,0,0,0.5);
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	opacity:0;
+}
+
+.close:hover {
+	color:gray;
+}
+
+.close {
+	display:block;
+	position:absolute;
+	top:5px;
+	right:10px;
+	cursor:pointer;
+}
+
+.enter-popup input[type="text"]:hover, .register-popup input[type="text"]:hover, .register-popup input[type="password"]:hover{
+	border-color:#98fb98;
+	box-shadow:0 0 0 0 #98fb98;
+}
+
+.enter-popup input[type="text"], .register-popup input[type="text"], .register-popup input[type="password"]{
+	width:257px;
+	height:35px;
+	border: 1px solid #cfd3d6;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 #cfd3d6;
+	padding:0 0 0 10px;
+	display:block;
+	margin:9px 0 17px;
+	font: 15px Lato;
+}
+
+
+.submit-btn {
+	box-shadow:1px 2px 0 0 #7f8c8d;
+	padding:8px 25px;
+	background:#1ABC9C;
+	font:bold 15px Lato;
+	border:none;
+	border-radius:3px;
+	color:white;
+	float:right;
+	margin:13px 0 0;
+	
+}
+
+.register-popup .submit-btn  {
+	float:none;
+	margin:13px 0 0 33px;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------NAV------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------SIDEBAR--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.sidebar {
+	padding:15px;
+	background:white;
+	border-radius:9px;
+	margin:15px 15px 0 0;
+	float:left;
+}
+
+.user-photo {
+	padding:5px;
+	border:1px solid gray;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.content {
+	overflow:hidden;
+	margin:15px 0 0;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------FOOTER---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
