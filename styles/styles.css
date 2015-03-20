@@ -322,7 +322,7 @@ a.go-to {
     text-align: center;
 }
 
-.user-photo {
+.sidebar-photo {
 	padding:5px;
 	border:1px solid gray;
 	width:100px;
@@ -386,22 +386,21 @@ a.go-to {
 
 .content {
 	background:white;
-	width:76.4%;
 	overflow:hidden;
 	border-radius:9px;
 	margin:15px 0 15px;
+	padding:20px;
 }
 
 .map {
     border-radius: 9px;
     height: 400px;
-    margin: 20px;
-    width: 94.5%;
+    margin: 0 0 20px;
+    width: 100%;
 }
 
 .content h2 {
 	font-size: 24px;
-    margin: 0 0 0 20px;
     overflow: hidden;
 }
 
@@ -416,7 +415,6 @@ a.go-to {
     color: white;
     display: block;
     font: bold 14px Lato;
-    margin: 0 20px 0 0;
     padding: 4px 8px;
 }
 
@@ -424,7 +422,7 @@ a.go-to {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
-    margin: 20px;
+    margin: 20px 0;
     padding: 8px;
 }
 
@@ -435,7 +433,16 @@ a.go-to {
 
 
 .event > p {
-    margin: 0 0 8px;
+    margin: 0 0 12px;
+}
+
+.event .date{
+	color:black;
+	float:left;
+}
+
+.date .time {
+	color:#6495ed;
 }
 
 .event > .author a{
@@ -445,5 +452,16 @@ a.go-to {
     text-align: right;
 }
 /*----------------------------------------------------------------------------------*/
+/*-------------------------------------PROFILE PAGE---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.main {
+	/* display:none; */
+}
+
+/*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
+
+
