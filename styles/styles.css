@@ -385,10 +385,65 @@ a.go-to {
 /*----------------------------------------------------------------------------------*/
 
 .content {
+	background:white;
+	width:76.4%;
 	overflow:hidden;
-	margin:15px 0 0;
+	border-radius:9px;
+	margin:15px 0 15px;
 }
 
+.map {
+    border-radius: 9px;
+    height: 400px;
+    margin: 20px;
+    width: 94.5%;
+}
+
+.content h2 {
+	font-size: 24px;
+    margin: 0 0 0 20px;
+    overflow: hidden;
+}
+
+.add {
+	float:right;
+}
+
+
+.add > a {
+    background: none repeat scroll 0 0 #1abc9c;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font: bold 14px Lato;
+    margin: 0 20px 0 0;
+    padding: 4px 8px;
+}
+
+.event {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    padding: 8px;
+}
+
+.event > h3 {
+    font-size: 17px;
+    margin: 0 0 10px;
+}
+
+
+.event > p {
+    margin: 0 0 8px;
+}
+
+.event > .author a{
+	color:#6495ed;
+    display: block;
+    font-size: 13px;
+    text-align: right;
+}
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
