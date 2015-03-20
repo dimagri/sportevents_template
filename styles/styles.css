@@ -122,6 +122,7 @@ a.go-to {
     position: absolute;
     right: 11px;
     top: 53px;
+	z-index:3;
 }
 
 .dropdown::before {
@@ -332,7 +333,7 @@ a.go-to {
 
 
 .categories {
-	margin: 20px 20px 30px;
+	margin: 0 20px 30px;
 	padding:0 0 20px 0;
 	border-bottom: 1px solid gray;
 }
@@ -455,9 +456,75 @@ a.go-to {
 /*-------------------------------------PROFILE PAGE---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
-.main {
-	/* display:none; */
+
+.user-photo {
+	width:100px;
+	height:100px;
+	border-radius:3px;
+	float:left;
+	margin: 0 20px 0 30px;
 }
+
+.full-profile {
+	position:relative;
+	overflow:hidden;
+}
+
+.full-profile h2 {
+	overflow:hidden;
+}
+
+
+.full-profile dl {
+    margin: 80px 0 0;
+    overflow: hidden;
+}
+
+
+.full-profile dt {
+	margin: 8px 0 0;
+    display: block;
+    float: left;
+    font: bold 15px Lato;
+    text-align: right;
+    width: 130px;
+}
+
+
+.full-profile dd {
+	margin: 10px 0 0;
+    overflow: hidden;
+    padding: 0 0 0 20px;
+	font-size:13px;
+}
+
+.full-profile dd a{
+	font-size:13px;
+}
+
+.full-profile a.user-friend {
+	color:#6495ed;
+}
+
+.full-profile a.profile-btn {
+	background: none repeat scroll 0 0 #1abc9c;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font: bold 12px Lato;
+    padding: 4px 8px;
+	margin:0 0 5px;
+	text-align:center;
+}
+
+.full-profile .not-confirmed a{
+	color:#1abc9c;
+}
+
+.alert {
+	color:red;
+}
+
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------FOOTER---------------------------------------*/
