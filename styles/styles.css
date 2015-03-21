@@ -125,7 +125,7 @@ a.go-to {
 	z-index:3;
 }
 
-.dropdown::before {
+.dropdown:before {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -141,7 +141,7 @@ a.go-to {
     top: -16px;
 }
 
-.dropdown::after {
+.dropdown:after {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -384,78 +384,6 @@ input.srch-place {
 }
 
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------CONTENT--------------------------------------*/
-/*----------------------------------------------------------------------------------*/
-
-.content {
-	background:white;
-	overflow:hidden;
-	border-radius:9px;
-	margin:15px 0 15px;
-	padding:20px;
-	display:block;
-}
-
-.map {
-    border-radius: 9px;
-    height: 400px;
-    margin: 0 0 20px;
-    width: 100%;
-}
-
-.content h2 {
-	font-size: 24px;
-    overflow: hidden;
-}
-
-.add {
-	float:right;
-}
-
-
-.add > a {
-    background: none repeat scroll 0 0 #1abc9c;
-    border-radius: 3px;
-    color: white;
-    display: block;
-    font: bold 14px Lato;
-    padding: 4px 8px;
-}
-
-.event {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
-    margin: 20px 0;
-    padding: 8px;
-}
-
-.event > h3 {
-    font-size: 17px;
-    margin: 0 0 10px;
-}
-
-
-.event > p {
-    margin: 0 0 12px;
-}
-
-.event .date{
-	color:black;
-	float:left;
-}
-
-.date .time {
-	color:#6495ed;
-}
-
-.event > .author a{
-	color:#6495ed;
-    display: block;
-    font-size: 13px;
-    text-align: right;
-}
-/*----------------------------------------------------------------------------------*/
 /*-------------------------------------PROFILE PAGE---------------------------------------*/
 /*----------------------------------------------------------------------------------*/
 
@@ -537,15 +465,15 @@ input.srch-place {
 /*----------------------------------------------------------------------------------*/
 
 
-.edit-usr-page ul {
+.edit-usr-page ul , .form ul {
     padding: 0 0 0 100px;
 }
 
-.edit-usr-page li {
+.edit-usr-page li , .form li {
     margin: 0 0 20px;
 }
 
-.edit-usr-page label {
+.edit-usr-page label , .form label {
 	color: #33495d;
     display: block;
     float: left;
@@ -555,14 +483,14 @@ input.srch-place {
     width: 200px;
 }
 
-.edit-usr-page input[type="text"]{
+.edit-usr-page input[type="text"], .form input[type="text"]{
 	margin:0;
 	display:inline;
 	height:32px;
 	width:190px;
 }
 
-.edit-usr-page textarea {
+.edit-usr-page textarea , .form textarea{
 	max-width:190px;
 	width: 190px;
 	height: 80px;
@@ -573,12 +501,12 @@ input.srch-place {
     padding: 5px 0 0 10px;
 }
 
-.edit-usr-page textarea:hover{
+.edit-usr-page textarea:hover, .form textarea:hover{
 	border-color:#98fb98;
 	box-shadow:0 0 0 0 #98fb98;
 }
 
-.edit-usr-page .submit-btn {
+.edit-usr-page .submit-btn , .form .submit-btn{
     display: block;
     float: none;
     margin: 5px auto 0;
@@ -589,4 +517,117 @@ input.srch-place {
 	color: #33495d;
     margin: 0 0 30px;
     text-align: center;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------CONTENT--------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.content {
+	background:white;
+	overflow:hidden;
+	border-radius:9px;
+	margin:15px 0 15px;
+	padding:20px;
+	display:block;
+}
+
+.map {
+    border-radius: 9px;
+    height: 400px;
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+.content h2 {
+	font-size: 24px;
+    overflow: hidden;
+}
+
+.add {
+	float:right;
+}
+
+
+.add > a {
+    background: none repeat scroll 0 0 #1abc9c;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font: bold 14px Lato;
+    padding: 4px 8px;
+}
+
+.event {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+    margin: 20px 0;
+    padding: 8px;
+}
+
+.event > h3 {
+	margin: 0 0 10px;
+}
+
+.event > h3 a{
+    font:bold 17px Lato;
+	color:#202020;
+}
+
+
+.event > p {
+    margin: 0 0 12px;
+}
+
+.event .date{
+	color:black;
+	float:left;
+}
+
+.date .time {
+	color:#6495ed;
+}
+
+.event > .author a{
+	color:#6495ed;
+    display: block;
+    font-size: 13px;
+    text-align: right;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------ADD EVENT - PAGE---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.add_event-page h2{
+	margin:0 0 20px;
+}
+
+
+.put-label {
+    display: block;
+    font: bold 14px Lato;
+    margin: 0 0 3px;
+}
+
+.add_event-page input[type="text"]{
+	width:257px;
+}
+
+.add_event-page textarea{
+	max-width:257px;
+	width:257px;
+}
+
+.add_event-page select {
+	width:257px;
+	height:35px;
+	border: 1px solid #cfd3d6;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 0 #cfd3d6;
+	padding:0 0 0 10px;
+	display:block;
+	margin:9px 0 17px;
+	font: 15px Lato;
 }
