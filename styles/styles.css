@@ -430,6 +430,7 @@ input.srch-place {
     overflow: hidden;
     padding: 0 0 0 20px;
 	font-size:13px;
+	min-height: 17px;
 }
 
 .full-profile dd a{
@@ -611,17 +612,35 @@ input.srch-place {
     margin: 0 0 3px;
 }
 
+.add_event-page ul {
+	padding:0 0 0 80px;
+}
+
+.add_event-page ul li.date{
+	font-size:23px;
+}
+
+.add_event-page ul li.date input{
+	margin:0 6px 0 0;
+}
+
+.add_event-page ul li.date select{
+    display: inline;
+    margin: 0;
+    width: 54px;
+}
+
 .add_event-page input[type="text"]{
-	width:257px;
+	width:236px;
 }
 
 .add_event-page textarea{
-	max-width:257px;
-	width:257px;
+	max-width:236px;
+	width:236px;
 }
 
 .add_event-page select {
-	width:257px;
+	width:249px;
 	height:35px;
 	border: 1px solid #cfd3d6;
     border-radius: 3px;
@@ -631,3 +650,4 @@ input.srch-place {
 	margin:9px 0 17px;
 	font: 15px Lato;
 }
+

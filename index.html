@@ -3,11 +3,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Index</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
 <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+ <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script src=" http://jquery-ui.googlecode.com/svn/tags/1.8.17/ui/i18n/jquery.ui.datepicker-ru.js"></script>
 <script src="js/main.js"></script>
+
 </head>
 
 <body>
@@ -62,18 +65,56 @@
 				<span class="add" ><a href="#" >Добавить событие</a></span>
 				<h2>Все события</h2>
 				<div class="event">
-					<h3>Играем в футбол</h3>
+					<h3><a href="#" >Играем в футбол</a></h3>
 					<p>Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны</p>
 					<span class="date">Начало <span class="time" >21.05</span> в <span class="time" >13:00</span></span>
 					<span class="author" ><a href="#" >Дима Григорьев</a></span>
 				</div>
 				<div class="event">
-					<h3>Играем в футбол</h3>
+					<h3><a href="#" >Играем в футбол</a></h3>
 					<p>Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны Мы четкие пацаны</p>
 					<span class="date">Начало <span class="time" >21.05</span> в <span class="time" >13:00</span></span>
 					<span class="author"><a href="#" >Дима Григорьев</a></span>
 				</div>
 			</div> -->
+			<div class="add_event-page">
+				<h2>Добавить событие</h2>
+				<span class="put-label">Поставте метку на карте <span class="alert">*</span></span>
+				<img class="map" alt="" src="images/map.jpg" >
+				<form class="form">
+					<ul>
+						<li><label>Название </label><input type="text"></li>
+						<li>
+							<label>Категория</label>
+							<select size="1" >
+								<option disabled>Выберите категорию</option>
+								<option value="">Футбол</option>
+								<option value="">Баскетбол</option>
+								<option value="">Бодибилдинг</option>
+							  </select>
+						</li>
+						<li><label>Описание</label><textarea></textarea></li>
+						<li class="date">
+							<label>Начало</label>
+							<input type="text" id="datepicker" style="width:100px">
+							<select size="1">
+								<option>1</option>
+								<option>1</option>
+								<option>1</option>
+							</select>
+							:
+							<select size="1">
+								<option>1</option>
+								<option>1</option>
+								<option>1</option>
+							</select>
+						</li>
+						<li><label>Стоимость</label><input type="text"></li>
+						<li><label>Контактный номер</label><input type="text" placeholder="0*********" maxlength="10"></li>
+					</ul>
+					<input class="submit-btn" type="submit" value="Добавить">
+				</form>
+			</div>
 <!-- 			<div class="full-profile">
 				<img class="user-photo" alt="" src="images/user.jpg">
 				<div class="right-position" >
@@ -97,7 +138,7 @@
 				</dl>
 				
 			</div> -->
-			<div class="edit-usr-page" >
+<!-- 			<div class="edit-usr-page" >
 				<h2>Профиль</h2>
 				<form >
 					<ul>
@@ -111,7 +152,7 @@
 					</ul>
 					<input class="submit-btn" type="submit" value="Редактировать">
 				</form>
-			</div>
+			</div> -->
 		</main>							<!-- MAIN CONTENT -->
 		
 		
@@ -123,11 +164,11 @@
 		<h3>Вход</h3>
 		<form >
 			<label>Email</label><input type="text">
-			<label>Пароль</label><input type="text">
+			<label>Пароль</label><input type="password">
 			<input class="submit-btn" type="submit" value="Войти">
 		</form>
 		<ul class="social-in">
-			<li class="vk" ><a href="#" title="Войти через Вконтакте" ></a></li>
+			<li class="vk" ><a href="http://vk.com" title="Войти через Вконтакте" ></a></li>
 			<li class="tw"><a href="#" title="Войти через Twitter" ></a></li>
 		</ul>
 	</div>

@@ -18,4 +18,7 @@ $(document).ready(function(){
 		$(".profile").toggleClass("active");;
 	});
 	
+	$(function() {
+		$( "#datepicker" ).datepicker();
+	});
 });
