@@ -456,9 +456,7 @@ input.srch-place {
 	color:#1abc9c;
 }
 
-.alert {
-	color:red;
-}
+
 
 
 /*----------------------------------------------------------------------------------*/
@@ -651,3 +649,20 @@ input.srch-place {
 	font: 15px Lato;
 }
 
+
+.alert-msg {
+	overflow:hidden;
+	display:block;
+	border-radius:9px;
+	background:white;
+	height:20px;
+	color:green;
+	margin:15px 0 -9px;
+	padding:10px;
+	text-align:center;
+	font-size:15px;
+}
+
+.alert {
+	color:red;
+}
