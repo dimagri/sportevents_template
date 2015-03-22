@@ -666,3 +666,108 @@ input.srch-place {
 .alert {
 	color:red;
 }
+
+
+
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------EVENT PAGE---------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+.event-page .event-info{
+	padding:0 0 20px;
+	border-bottom:1px solid rgba(0, 0, 0, 0.15);
+}
+
+.event-page {
+    font-size: 15px;
+}
+
+.event-page .time {
+    margin: 2px 0 0;
+}
+
+a.edit-event-btn {
+	background: none repeat scroll 0 0 #1abc9c;
+    border-radius: 3px;
+    color: white;
+    font: bold 14px Lato;
+    padding: 4px 8px;
+	margin:2px 0 5px;
+	text-align:center;
+	float:right;
+}
+
+.event-page .author{
+	color:#6495ed;
+	font-size:15px;
+}
+.event-page p {
+	margin:11px 0;
+    overflow: hidden;
+}
+
+
+.add-comment {
+	overflow:hidden;
+    margin: 20px auto 0;
+    padding: 20px 0 0;
+    width: 560px;
+}
+
+.comment img, .add-comment img{
+    border-radius: 4px;
+    display: block;
+    float: left;
+    height: 65px;
+    margin: 0 10px 0 0;
+    width: 65px;
+}
+
+.add-comment textarea {
+	border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    font: 15px Lato;
+    height: 75px;
+    padding: 5px 0 0 10px;
+    width: 471px;
+	max-width: 471px;
+}
+
+.add-comment .submit-btn {
+	padding:3px 8px;
+	font-size:14px;
+	margin:6px 0 0;
+}
+
+
+.comment {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    overflow: hidden;
+    padding: 10px;
+    width: 540px;
+}
+
+
+a.cmnt-author {
+    color: #6495ed;
+    font-size: 16px;
+}
+
+
+.cmnt-date {
+    color: gray;
+    float: right;
+}
+
+
+.comment  .send-msg {
+    color: #1abc9c;
+    float: right;
+    font-size: 14px;
+    margin: 0 0 0 75px;
+}
