@@ -6,8 +6,8 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
 <link rel="stylesheet" type="text/css" href="styles/styles.css" />
-<!--  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+ <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src=" http://jquery-ui.googlecode.com/svn/tags/1.8.17/ui/i18n/jquery.ui.datepicker-ru.js"></script>
 <script src="js/main.js"></script>
 
@@ -18,7 +18,7 @@
 	
 		<header class="header">   <!-- HEADER -->
 			<div class="right-position" >
-				<div class="profile">
+<!-- 				<div class="profile">
 					<span class="name">Дима<span class="arrow"></span></span>
 					<ul class="dropdown">
 						<li><a href="#">Профиль</a></li>
@@ -26,13 +26,13 @@
 						<li><a href="#">Отправленные сообщения</a></li>
 						<li><a href="#">Выйти</a></li>
 					</ul>
-				</div>
-<!-- 				<ul class="log-in">
+				</div> -->
+				<ul class="log-in">
 					<li id="enter" >Вход</li>
 					<li id="register">Регистрация</li>
-				</ul> -->
+				</ul>
 			</div>
-			<h1 class="logo">SportEvents</h1>
+			<h1 class="logo"><a href="/">SportEvents</a></h1>
 			<a class="go-to" href="#">Перейти к секциям</a>
 		</header> <!-- HEADER -->
 
@@ -62,7 +62,7 @@
 		
 		<main class="content"> 			<!-- MAIN CONTENT -->
 			
-<!-- 			<div class="main">
+			<!-- <div class="main">
 				<img class="map" alt="" src="images/map.jpg" >
 				<span class="add" ><a href="#" >Добавить событие</a></span>
 				<h2>Все события</h2>
@@ -78,7 +78,7 @@
 					<span class="date">Начало <span class="time" >21.05</span> в <span class="time" >13:00</span></span>
 					<span class="author"><a href="#" >Дима Григорьев</a></span>
 				</div>
-			</div> -->
+			</div>
 			<div class="event-page">
 				<div class="event-info" >
 					<img class="map" alt="" src="images/map.jpg" >
@@ -110,7 +110,7 @@
 					<a href="#" class="send-msg" >Отправить автору сообщение</a>
 				</div>
 			</div>
-<!-- 			<div class="add_event-page">
+			<div class="add_event-page">
 				<h2>Добавить событие</h2>
 				<span class="put-label">Поставте метку на карте <span class="alert">*</span></span>
 				<img class="map" alt="" src="images/map.jpg" >
@@ -147,8 +147,8 @@
 					</ul>
 					<input class="submit-btn" type="submit" value="Сохранить">
 				</form>
-			</div> -->
-			<!-- <div class="full-profile">
+			</div>
+			<div class="full-profile">
 				<img class="user-photo" alt="" src="images/user.jpg">
 				<div class="right-position" >
 					<a class="profile-btn" href="#" >Редактировать профиль</a>
@@ -170,8 +170,8 @@
 					 <dd><a class="user-friend" href="#">Сергей Колесник</a></dd>
 				</dl>
 				
-			</div> -->
-<!-- 			<div class="edit-usr-page" >
+			</div>
+			<div class="edit-usr-page" >
 				<h2>Профиль</h2>
 				<form >
 					<ul>
@@ -185,7 +185,91 @@
 					</ul>
 					<input class="submit-btn" type="submit" value="Редактировать">
 				</form>
-			</div> -->
+			</div>
+			<div class="messages-page">
+				<h2>Входящие сообщения</h2>
+				<table>
+					<tbody>
+						<tr class="thead">
+							<th>Время</th>
+							<th>От кого</th>
+							<th>Тема</th>
+							<th></th>
+						</tr>
+						<tr class="unread">
+							<td class="time" >Вчера, 16:33</td>
+							<td class="messages-name" >Дима Григорьев</td>
+							<td class="theme" >
+								<a href="/messages/1">лорав</a>
+							</td>
+							<td class="delete" >
+								<a href="#">Удалить сообщение</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="time" >Вчера, 16:33</td>
+							<td class="messages-name" >Дима Григорьев</td>
+							<td class="theme" >
+								<a href="/messages/1">лорав</a>
+							</td>
+							<td class="delete" >
+								<a href="#">Удалить сообщение</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="time" >Вчера, 16:33</td>
+							<td class="messages-name" >Дима Григорьев</td>
+							<td class="theme" >
+								<a href="/messages/1">лорав</a>
+							</td>
+							<td class="delete" >
+								<a href="#">Удалить сообщение</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="time" >Вчера, 16:33</td>
+							<td class="messages-name" >Дима Григорьев</td>
+							<td class="theme" >
+								<a href="/messages/1">лорав</a>
+							</td>
+							<td class="delete" >
+								<a href="#">Удалить сообщение</a>
+							</td>
+						</tr><tr>
+							<td class="time" >Вчера, 16:33</td>
+							<td class="messages-name" >Дима Григорьев</td>
+							<td class="theme" >
+								<a href="/messages/1">лорав</a>
+							</td>
+							<td class="delete" >
+								<a href="#">Удалить сообщение</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="message-page" >
+				<h2>Сообщение "лорав"</h2>
+				<div class="message">
+					<ul>
+						<li class="date">Вчера, 16:33</li>
+						<li><span class="from">От:</span>Дима Григорьев</li>
+						<li><span class="to">Кому:</span>Сергей Колесник</li>
+						<li class="text"><p>Текст сообщения сообщения сообщения сообщения сообщения сообщения сообщения</p></li>
+					</ul>
+				</div>
+			</div>
+			 --><div class="send-message">
+				<h2>Новое сообщение</h2>
+				<form>
+					<ul>
+						<li><p>Кому: Сергей Колесник</p></li>
+						<li><label>Тема: </label><input type="text"></li>
+						<li><label>Текст сообщения: </label><textarea></textarea></li>
+					</ul>
+					<input type="submit" class="submit-btn" value="Отправить">
+				</form>
+			</div>
 		</main>							<!-- MAIN CONTENT -->
 		
 		
