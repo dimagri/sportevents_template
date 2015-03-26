@@ -1,7 +1,7 @@
 /*----------------------------------------------------------------------------------*/
 /*------------------------------RESET DEFAULT STYLES--------------------------------*/
 /*----------------------------------------------------------------------------------*/
-html,body                       { width:100%; /* height:100%; */ }
+html,body                       { width:100%; height:99%; }
 body                            { padding:0; margin:0; font:12px Lato; background:#fff; color:#202020; }
 div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
 	padding:0;
@@ -47,14 +47,17 @@ body {
 .header {
 	background:white;
 	border-radius:9px;
-	overflow:hidden;
 	margin: 15px 0 0;
+	height:59px;
 }
 
 .wrap {
+	height:auto;
 	width:960px;
 	margin:0 auto;
 	position:relative;
+	min-height:100%;
+	z-index:2;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -70,8 +73,12 @@ body {
 }
 
 .logo {
+	margin: -17px 0 0 11px;
+	position:absolute;
 	float:left;
 	overflow:hidden;
+	width:230px;
+	height:100px;
 }
 
 a.go-to {
@@ -85,6 +92,9 @@ a.go-to {
     padding: 10px;
     text-align: center;
     width: 147px;
+	position:relative;
+	left:12%;
+	top:10px;
 }
 
 .name {
@@ -214,6 +224,7 @@ a.go-to {
 	font:bold 14.5px Lato;
 	z-index:2;
 	opacity:0;
+	z-index:1002;
 }
 
 .enter-popup h3, .register-popup h3{
@@ -228,7 +239,9 @@ a.go-to {
 	width:100%;
 	height:100%;
 	top:0;
+	left:0;
 	opacity:0;
+	z-index:1001;
 }
 
 .close:hover {
@@ -301,8 +314,52 @@ input[type="text"], input[type="password"]{
 }
 
 /*----------------------------------------------------------------------------------*/
-/*-------------------------------------NAV------------------------------------------*/
+/*-------------------------------------FOOTER------------------------------------------*/
 /*----------------------------------------------------------------------------------*/
+
+.footer {
+	background:white;
+	border-radius:9px;
+	overflow:hidden;
+	margin: -90px auto 15px;
+	height:60px;
+	clear:both;
+	width:960px;
+	position:relative;
+	z-index:5;
+}
+
+.footer .geekhub_logo {
+	float:right;
+	margin:8px 13px 0 0;
+}
+
+.footer .copy {
+	overflow:hidden;
+    font: 14px Lato;
+    padding: 21px 13px;
+    vertical-align: middle;
+}
+
+.footer .geekhub_logo .geekhub{
+	display:block;
+	width:100px;
+	height:43px;
+	background:url("../images/geekhub_logo.png");
+	text-indent:-100em;
+}
+
+.clearfix:after {content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------SIDEBAR--------------------------------------*/
@@ -312,8 +369,12 @@ input[type="text"], input[type="password"]{
 	padding:25px;
 	background:white;
 	border-radius:9px;
-	margin:15px 15px 0 0;
+	margin:0 15px 15px 0;
 	float:left;
+	max-width:200px;
+	transition:0.5s;
+	position:relative;
+	top:15px;
 }
 
 .sidebar-profile {
@@ -359,6 +420,10 @@ input[type="text"], input[type="password"]{
 
 .categories ul li:hover a{
 	color:#1ABC9C;
+}
+
+.sidebar form {
+	text-align:center;
 }
 
 input.srch-place {
@@ -527,7 +592,7 @@ input.srch-place {
 	overflow:hidden;
 	border-radius:9px;
 	margin:15px 0 15px;
-	padding:20px;
+	padding:20px 20px 75px;
 	display:block;
 }
 
@@ -773,7 +838,7 @@ a.cmnt-author {
 /*----------------------------------------------------------------------------------*/
 
 .messages-page table{
-	width: 690px;
+	width: 100%;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     border-radius: 3px;
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);

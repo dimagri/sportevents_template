@@ -21,4 +21,19 @@ $(document).ready(function(){
 	$(function() {
 		$( "#datepicker" ).datepicker();
 	});
+	
+	var contentWidth = $(".content").width();
+	
+	$(function(){
+		$(window).scroll(function() {
+			var top = $(document).scrollTop();
+			if (top < 74) {$(".content").css({"width":"auto","float":"none"});
+				$(".floating").css({"position": 'relative'});}
+				
+			else { $(".content").css({"width": contentWidth,"float":"right"});
+				$(".floating").css({"top":"15px", position:'fixed' });
+				
+			}
+		});
+	});
 });
