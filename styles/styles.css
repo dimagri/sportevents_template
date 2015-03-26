@@ -881,9 +881,13 @@ a.cmnt-author {
 	background:white;
 }
 
-.messages-page tr.unread td{
+.messages-page tr.unread td,.messages-page tr.unread .messages-name a{
 	font-weight:bold;
 	color:black;
+}
+
+.messages-page .messages-name a:hover, .messages-page tr.unread .messages-name a:hover{
+	color: #6495ed;
 }
 
 .messages-page tr.unread .theme a{
@@ -914,6 +918,11 @@ a.cmnt-author {
 	padding-left:15px;
 }
 
+.messages-name a {
+	font-size:16px;
+	color:gray;
+	text-decoration:none;
+}
 
 /*----------------------------------------------------------------------------------*/
 /*-------------------------------------MESSAGE PAGE--------------------------*/
@@ -931,6 +940,11 @@ a.cmnt-author {
 .message li {
 	padding: 8px 0 0;
 	overflow:hidden;
+}
+
+.message li a {
+	color: #6495ed;
+	font-size:16px;
 }
 
 .message .date {
