@@ -3,13 +3,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Index</title>
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css" />
 <link rel="stylesheet" type="text/css" href="styles/styles.css" />
- <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-<script src=" http://jquery-ui.googlecode.com/svn/tags/1.8.17/ui/i18n/jquery.ui.datepicker-ru.js"></script>
 <script src="js/main.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/tooltipsy.min.js"></script>
 
 </head>
 
@@ -62,7 +63,7 @@
 		
 		<main class="content clearfix" > 			<!-- MAIN CONTENT -->
 			
-			<!-- <div class="main">
+			<div class="main">
 				<img class="map" alt="" src="images/map.jpg" >
 				<span class="add" ><a href="#" >Добавить событие</a></span>
 				<h2>Все события</h2>
@@ -78,8 +79,8 @@
 					<span class="date">Начало <span class="time" >21.05</span> в <span class="time" >13:00</span></span>
 					<span class="author"><a href="#" >Дима Григорьев</a></span>
 				</div>
-			</div> -->
-			<!-- <div class="event-page">
+			</div>
+			<div class="event-page">
 				<div class="event-info" >
 					<img class="map" alt="" src="images/map.jpg" >
 					<a href="#" class="edit-event-btn" >Редактировать</a>
@@ -94,8 +95,10 @@
 				</div>
 				<div class="add-comment">
 					<img src="images/user.jpg" alt="" >
-					<textarea placeholder="Добавить комментарий..." ></textarea>
-					<input type="submit" value="Комментировать" class="submit-btn">
+					<form>
+						<textarea placeholder="Добавить комментарий..." class="hastip" title="Обязательно для заполнения.Длина: от 3 до 150 символов" id="event_name"></textarea>
+						<input type="submit" value="Комментировать" class="submit-btn">
+					</form>
 				</div>
 				<div class="comment">
 					<img src="images/user.jpg" alt="" >
@@ -116,7 +119,7 @@
 				<img class="map" alt="" src="images/map.jpg" >
 				<form class="form">
 					<ul>
-						<li><label>Название </label><input type="text"></li>
+						<li><label>Название </label><input type="text" class="hastip" title="Обязательно для заполнения.Длина: от 5 символов" id="event_name"></li>
 						<li>
 							<label>Категория</label>
 							<select size="1" >
@@ -126,7 +129,7 @@
 								<option value="">Бодибилдинг</option>
 							  </select>
 						</li>
-						<li><label>Описание</label><textarea></textarea></li>
+						<li><label>Описание</label><textarea class="hastip" title="Обязательно для заполнения.Длина: от 20 символов"id="event_description"></textarea></li>
 						<li class="date">
 							<label>Начало</label>
 							<input type="text" id="datepicker" style="width:100px">
@@ -143,7 +146,7 @@
 							</select>
 						</li>
 						<li><label>Стоимость</label><input type="text"></li>
-						<li><label>Контактный номер</label><input type="text" placeholder="0*********" maxlength="10"></li>
+						<li><label>Контактный номер</label><input type="text" placeholder="0*********" maxlength="10" class="hastip" title="Обязательно для заполнения." id="event_phone"></li>
 					</ul>
 					<input class="submit-btn" type="submit" value="Сохранить">
 				</form>
@@ -178,15 +181,15 @@
 						<li><label>Логин <span class="alert"> *</span></label><input type="text"></li>
 						<li><label>Полное имя</label><input type="text"></li>
 						<li><label>Email</label><input type="text"></li>
-						<li><label>Коротко о себе</label><textarea></textarea></li>
-						<li><label>Номер телефона (0*********)</label><input type="text"></li>
+						<li><label>Коротко о себе</label><textarea id="user_about" class="hastip" title="Длина: до 100 символов"></textarea></li>
+						<li><label>Номер телефона (0*********)</label><input type="text" id="user_phone" class="hastip" title="Длина: от 6 до 10 символов"></li>
 						<li><label>Skype</label><input type="text"></li>
 						<li><label>Ссылка на аватар</label><input type="text"></li>
 					</ul>
 					<input class="submit-btn" type="submit" value="Редактировать">
 				</form>
-			</div> -->
-			<!-- <div class="messages-page">
+			</div>
+			<div class="messages-page">
 				<h2>Входящие сообщения</h2>
 				<table>
 					<tbody>
@@ -247,8 +250,8 @@
 						</tr>
 					</tbody>
 				</table>
-			</div> -->
-			<!-- <div class="message-page" >
+			</div>
+			<div class="message-page" >
 				<h2>Сообщение "лорав"</h2>
 				<div class="message">
 					<ul>
@@ -258,14 +261,14 @@
 						<li class="text"><p>Текст сообщения сообщения сообщения сообщения сообщения сообщения сообщения</p></li>
 					</ul>
 				</div>
-			</div> -->
+			</div>
 			<div class="send-message">
 				<h2>Новое сообщение</h2>
 				<form>
 					<ul>
 						<li><p>Кому: Сергей Колесник</p></li>
-						<li><label>Тема: </label><input type="text"></li>
-						<li><label>Текст сообщения: </label><textarea></textarea></li>
+						<li><label>Тема: </label><input type="text" id="message_subject" class="hastip" title="Обязательно для заполнения.Длина: от 4 до 140 символов"></li>
+						<li><label>Текст сообщения: </label><textarea id="message_body" class="hastip" title="Обязательно для заполнения.Длина: до 1000 символов"></textarea></li>
 					</ul>
 					<input type="submit" class="submit-btn" value="Отправить">
 				</form>
@@ -287,8 +290,8 @@
 		<span class="close">x</span>
 		<h3>Вход</h3>
 		<form >
-			<label>Email</label><input type="text">
-			<label>Пароль</label><input type="password">
+			<label>Email</label><input type="text" id="email" class="hastip" title="Обязательно для заполнения.">
+			<label>Пароль</label><input type="password" id="password" class="hastip" title="Обязательно для заполнения.">
 			<input class="submit-btn" type="submit" value="Войти">
 		</form>
 		<ul class="social-in">
@@ -300,12 +303,17 @@
 		<span class="close">x</span>
 		<h3>Регистрация</h3>
 		<form>
-			<label>Имя</label><input type="text">
-			<label>Email</label><input type="text">
-			<label>Пароль</label><input type="password">
+			<label>Имя</label><input type="text" id="user_name" class="hastip" title="Обязательно для заполнения.">
+			<label>Email</label><input type="text" id="user_email" class="hastip" title="Обязательно для заполнения.">
+			<label>Пароль</label><input type="password" id="user_password" class="hastip" title="Обязательно для заполнения.">
+			<label>Пароль gfdgd</label><input type="password" id="user_password_confirmation" class="hastip" title="Обязательно для заполнения.">
 			<input class="submit-btn" type="submit" value="Зарегистрироваться">
 		</form>
 	</div>
 	<div class="mask"></div> 		<!-- POPUP`S -->
+	
+	<script type="text/javascript">
+$('.hastip').tooltipsy();
+</script>
 </body>
 </html>

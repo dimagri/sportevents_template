@@ -17,11 +17,7 @@ $(document).ready(function(){
 	$(document).on("click", ".name", function () {
 		$(".profile").toggleClass("active");;
 	});
-	
-	$(function() {
-		$( "#datepicker" ).datepicker();
-	});
-	
+
 	var contentWidth = $(".content").width();
 	
 	$(function(){

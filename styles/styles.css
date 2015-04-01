@@ -49,6 +49,7 @@ body {
 	border-radius:9px;
 	margin: 15px 0 0;
 	height:59px;
+	overflow:hidden;
 }
 
 .wrap {
@@ -58,6 +59,25 @@ body {
 	position:relative;
 	min-height:100%;
 	z-index:2;
+}
+
+
+form input.required,form textarea.required {
+	border-color:red;
+}
+
+form input.normal,form textarea.normal {
+	border-color:rgba(0, 0, 0, 0.15);
+}
+
+.tooltipsy
+{
+    padding: 10px;
+    max-width: 400px;
+    color: #303030;
+    background-color: #f5f5b5;
+    border: 1px solid #deca7e;
+	margin-bottom:3px;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -94,7 +114,6 @@ a.go-to {
     width: 147px;
 	position:relative;
 	left:12%;
-	top:10px;
 }
 
 .name {
@@ -131,7 +150,7 @@ a.go-to {
     padding: 10px 20px 10px 10px;
     position: absolute;
     right: 11px;
-    top: 53px;
+    top: 63px;
 	z-index:3;
 }
 
