@@ -111,7 +111,7 @@ a.go-to {
     overflow: hidden;
     padding: 10px;
     text-align: center;
-    width: 147px;
+    width: 155px;
 	position:relative;
 	left:12%;
 }
@@ -605,6 +605,10 @@ input.srch-place {
 	color: #33495d;
     margin: 0 0 30px;
     text-align: center;
+}
+
+#user_avatar {
+	padding:5px 0 0;
 }
 
 /*----------------------------------------------------------------------------------*/
